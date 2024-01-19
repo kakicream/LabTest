@@ -118,6 +118,7 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:CROSS_PLATFORM_INPUT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -363,8 +364,22 @@
 "Assets/MST_Creator/Car Controller For Unity/Scripts/Radio.cs"
 "Assets/MST_Creator/Car Controller For Unity/Scripts/Speedometer_Controller.cs"
 "Assets/MST_Creator/Car Controller For Unity/Scripts/Wheel_Effects.cs"
+"Assets/Scripts/AnotherClass.cs"
+"Assets/Scripts/AwakeAndStartScript.cs"
+"Assets/Scripts/CamLookAtScript.cs"
+"Assets/Scripts/ChildScript.cs"
+"Assets/Scripts/ColorLerpScript.cs"
 "Assets/Scripts/CubeMover.cs"
+"Assets/Scripts/DestroyScript.cs"
+"Assets/Scripts/LerpScript.cs"
+"Assets/Scripts/LightEnableScript.cs"
+"Assets/Scripts/ParentScript.cs"
+"Assets/Scripts/RepeatScript.cs"
+"Assets/Scripts/ScopeAndAccessModifiers.cs"
 "Assets/Scripts/TestCode.cs"
+"Assets/Scripts/TranslateRotate.cs"
+"Assets/Scripts/UpdateAndFixedUpdate.cs"
+"Assets/Scripts/VectorCalcScript.cs"
 -langversion:9.0
 
 /deterministic

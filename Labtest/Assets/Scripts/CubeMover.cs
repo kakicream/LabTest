@@ -1,23 +1,45 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class CubeMover : MonoBehaviour
 {
+    float coffeeTemperature = 85.0f;
+    float hotLimitTemperature = 70.0f;
+    float coldLimitTemperature = 40.0f;
+
+    void Start()
+    {
+        Debug.Log(transform.position.x);
+        if (transform.position.y < 5.0f)
+        {
+            Debug.Log("Hit Ground");
+        }
+    }
+
     void Update()
     {
-        if (transform.position.x >= 5.0f)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            transform.position += Vector3.back * Time.deltaTime;
+            TemperatureTest();
+        }
+        coffeeTemperature -= Time.deltaTime * 5.0f;
+    }
+
+    void TemperatureTest()
+    {
+        if(coffeeTemperature > hotLimitTemperature)
+        {
+            print("Coffee is too hot");
+        }
+        else if(coffeeTemperature < coldLimitTemperature)
+        {
+            print("Coffee is too cold");
         }
         else
         {
-            transform.position += Vector3.forward * Time.deltaTime;
-        }
-
-        if (transform.position.y >= 0.0f)
-        {
-            transform.position += Vector3.up * Time.deltaTime;
+            print("Coffee is just right");
         }
     }
 }
